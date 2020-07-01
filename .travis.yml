@@ -17,9 +17,6 @@ matrix:
         - DT
         - graphics
         - ggfittext
-        - dplyr
-        - plotly
-        - stats
         - utils
     - r: 3.6
     - r: release
