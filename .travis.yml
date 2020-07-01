@@ -1,6 +1,6 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
-language: R
+language: r
 sudo: false
 matrix:
   include:
@@ -17,6 +17,7 @@ matrix:
         - DT
         - graphics
         - ggfittext
+        - stats
         - utils
     - r: 3.6
     - r: release
@@ -37,3 +38,4 @@ notifications:
 branches:
   only:
     - master
+
