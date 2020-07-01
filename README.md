@@ -6,7 +6,7 @@
 Status](https://ci.appveyor.com/api/projects/status/fva5so5gjy23sir5/branch/master?svg=true)](https://ci.appveyor.com/project/Prof-ThiagoOliveira/planExp)
 
 
-`planExp` is a package under development to be used in planning, analysing, and simulating experiments using the Shiny dashboard for visualization. This project started on the day 22 of June, with focuses in planning experiments and teaching.
+`planExp` is a package under development to plan, analyse, and simulate experiments using the Shiny dashboard for visualization. This project started on the day 22 of June, with focuses in planning experiments and teaching.
 
 # Type of experiment design supported by the planExp package
  * Completely Randomized Design (CRD) - Updated 27/06/2020
