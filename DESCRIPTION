@@ -1,0 +1,18 @@
+Package: planExp
+Type: Package
+Title: Experimental Planning
+Version: 0.1.2
+Authors@R: c(person("Thiago", "de Paula Oliveira", role=c("aut", "cre"), email = "thiago.paula.oliveira@usp.br"))
+Author: Thiago de Paula Oliveira [aut, cre]
+Maintainer: Thiago de Paula Oliveira <thiago.paula.oliveira@usp.br>
+Description: The content falls into functions to planning experiments including visualization through shiny dashboard.
+Date: 2020-06-29
+Depends: R (>= 3.6), shiny (>= 1.4.0.2), shinydashboard (>= 0.7.1), shinydashboardPlus (>= 0.7.0), shinyWidgets (>= 0.5.0), ggplot2 (>= 2.2.1)
+Imports: DT, graphics, ggfittext, utils
+Suggests: roxygen2 (>= 3.0.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+Repository: CRAN
+NeedsCompilation: yes
+LazyData: true
+RoxygenNote: 7.0.2

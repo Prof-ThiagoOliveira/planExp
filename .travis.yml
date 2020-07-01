@@ -1,0 +1,42 @@
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
+language: R
+sudo: false
+matrix:
+  include:
+    - name: "Roxygen check"
+      cache: packages          
+      r_packages:
+        - devtools
+        - covr
+        - shiny
+        - shinydashboard 
+        - shinydashboardPlus 
+        - shinyWidgets
+        - ggplot2 
+        - DT
+        - graphics
+        - ggfittext
+        - dplyr
+        - plotly
+        - stats
+        - utils
+    - r: 3.6
+    - r: release
+    - r: devel
+      after_success:
+        - travis_wait 30 Rscript coverage.R
+      r_build_args: "--no-build-vignettes"
+
+# Only report coverage for the release version
+after_success:
+  - test $TRAVIS_R_VERSION_STRING = 'release' && Rscript -e 'covr::codecov()'
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+
+branches:
+  only:
+    - master
