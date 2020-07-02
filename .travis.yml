@@ -39,3 +39,7 @@ branches:
   only:
     - master
 
+git:
+  depth: 25
+  quiet: true
+
